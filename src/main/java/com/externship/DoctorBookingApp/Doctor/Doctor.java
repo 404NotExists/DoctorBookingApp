@@ -12,7 +12,7 @@ public class Doctor {
     @GeneratedValue(
             strategy = GenerationType.IDENTITY
     )
-    private Integer empid;
+    private Integer id;
     private String name;
     private String email;
     private LocalDate dob;
@@ -30,12 +30,12 @@ public class Doctor {
         this.speciality = speciality;
     }
 
-    public Integer getEmpid() {
-        return empid;
+    public Integer getId() {
+        return id;
     }
 
     public void setEmpid(Integer empid) {
-        this.empid = empid;
+        this.id = empid;
     }
 
     public String getName() {
@@ -81,7 +81,7 @@ public class Doctor {
     @Override
     public String toString() {
         return "Doctor{" +
-                "empid=" + empid +
+                "empid=" + id +
                 ", name='" + name + '\'' +
                 ", email='" + email + '\'' +
                 ", dob=" + dob +
